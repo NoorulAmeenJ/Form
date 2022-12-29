@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noorul's Form</title>
+   
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
         <p id="description">Fill the form as your wish</p>
     <form id="form" >
         <div id="first-name">First Name :
-            <input type="text" id="first-input" placeholder="Enter your First Name ">
+            <input type="text" id="first-input" placeholder="Enter your First Name " required>
         </div>
         <div id="last-name">Last Name :
             <input type="text" id="last-input" placeholder="Enter your Last Name ">
@@ -28,8 +29,8 @@
         </div>
         <div id="gender">
             <label>Gender :</label>
-            <input  id="input-male" type="radio" name="gender" value="Male"> <label for="input-male">Male</label> 
-            <input id="input-female" type="radio" name="gender" value="Female">  <label for="input-female" >Female</label> 
+            <input  id="input-male" type="radio" name="gender" value="Male" required > <label for="input-male">Male</label> 
+            <input id="input-female" type="radio" name="gender" value="Female" required >  <label for="input-female" >Female</label> 
             
         </div>
         <div id="foods"> 
@@ -48,26 +49,53 @@
             <label for="input-state" >State :</label>
             <input type="text" id="input-state" placeholder="Enter your State">
         </div>
-        <div id="country">
-            <label for ="input-country">Country :</label>
-            <input type="text" id="input-country" placeholder="Enter your Country" >
+        <div id="counthy">
+            <label for ="input-counthy">Country :</label>
+            <input type="text" id="input-counthy" placeholder="Enter your Counthy" >
         </div>
         <button type="submit" id="submit" >Submit</button>
         <button type="reset" id="reset" >Reset</button>
     </form>
-    <table>
-        <th>
-            <tr>First Name</tr>
-            <tr>Last Name</tr>
-            <tr>Address </tr>
-            <tr>Pincode</tr>
-            <tr>Gender</tr>
-            <tr>Food Items</tr>
-            <tr>State </tr>
-            <tr>Country</tr>
-        </th>
-    </table>
+    <br>
+    <table  width="100%" border="1" cellspacing="0" cellpadding="0" border="0">
+    
+        <thead>
+            <th id="table-First">First Name</th>
+            <th>Last Name</th>
+            <th>Address </th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food Items</th>
+            <th>State </th>
+            <th>Country</th>
+        </thead>
+        <tbody id="table">
+               <tr>
+                 <td>noorul</td>
+                 <td>ameen</td>
+                 <td>j</td>
+               </tr>  
+               <tr>
+                <td>arafat</td>
+                <td>ali</td>
+                <td>j</td>
+              </tr>
+              <tr>
+                <td>asar</td>
+                <td>deen</td>
+                <td>k</td>
+              </tr>
 
+
+
+        </tbody>
+    </table>
+     
+     
+
+    
+
+     <script src="script.js"></script>
     </div>
 
 
