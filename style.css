@@ -1,0 +1,14 @@
+*{
+    background-color: black;
+    color: whitesmoke;
+}
+#container{
+    background-color: aqua;
+    border: 5px solid green;
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+    /* display : flex; */
+    
+    display: column;
+}
