@@ -12,22 +12,61 @@
         <h1 id="title" >FORM</h1>
         <p id="description">Fill the form as your wish</p>
     <form id="form" >
-        <div id="first-name">First Name :</div>
-        <div id="last-name">Last Name :</div>
+        <div id="first-name">First Name :
+            <input type="text" id="first-input" placeholder="Enter your First Name ">
+        </div>
+        <div id="last-name">Last Name :
+            <input type="text" id="last-input" placeholder="Enter your Last Name ">
+        </div>
         <div id="address">
-            <textarea  id=""></textarea>text
+            <label for="input-address">Address :</label>
+            <textarea  id="address-text" placeholder="Enter your Address"></textarea>
         </div>
-        <div id="pincode">pincode</div>
-        <div id="gender">gender
-            <input type="radio" name="gender" >
+        <div id="pincode">
+            <label for="pincode">Pincode :</label>
+            <input type="text" id="pincode-input" placeholder="Enter your Pincode">
         </div>
-        <div id="foods">foods</div>
-        <div id="state">state</div>
-        <div id="country">country</div>
+        <div id="gender">
+            <label>Gender :</label>
+            <input  id="input-male" type="radio" name="gender" value="Male"> <label for="input-male">Male</label> 
+            <input id="input-female" type="radio" name="gender" value="Female">  <label for="input-female" >Female</label> 
+            
+        </div>
+        <div id="foods"> 
+             <div id="food-items">Food Items :</div>
+            <ul>
+                <li> <input type="checkbox" id="input-Parotta" value="Parotta" > <label for="input-Parotta">Parotta</label> </li>
+                <li> <input type="checkbox" id="input-Biriyani" value="input-Biriyani" > <label for="input-Biriyani">Biriyani</label></li>
+                <li> <input type="checkbox" id="input-Dosa" value="input-Dosa" > <label for="input-Dosa">Dosa</label></li>
+                <li> <input type="checkbox" id="input-Idly" value="input-Idly" ><label for="input-Idly">Idly</label></li>
+                <li> <input type="checkbox" id="input-Pongal" value="input-Pongal" > <label for="input-Pongal">Pongal</label></li>
+
+
+            </ul>
+        </div>
+        <div id="state">
+            <label for="input-state" >State :</label>
+            <input type="text" id="input-state" placeholder="Enter your State">
+        </div>
+        <div id="country">
+            <label for ="input-country">Country :</label>
+            <input type="text" id="input-country" placeholder="Enter your Country" >
+        </div>
         <button type="submit" id="submit" >Submit</button>
-        <button type="reset" id="submit" >Reset</button>
+        <button type="reset" id="reset" >Reset</button>
     </form>
-    <table>table</table>
+    <table>
+        <th>
+            <tr>First Name</tr>
+            <tr>Last Name</tr>
+            <tr>Address </tr>
+            <tr>Pincode</tr>
+            <tr>Gender</tr>
+            <tr>Food Items</tr>
+            <tr>State </tr>
+            <tr>Country</tr>
+        </th>
+    </table>
 
     </div>
 
