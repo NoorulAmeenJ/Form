@@ -9,37 +9,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
    <div id="container" >
         <h1 id="title" >FORM</h1>
         <p id="description">Fill the form as your wish</p>
     <form id="form" >
-        <div id="first-name">First Name :
-            <input type="text" id="first-input" placeholder="Enter your First Name " required>
-        </div>
+        <div >First Name :
+            <input type="text"  required id="first-name" placeholder="Enter your First Name "    >
+        </div>               
         <div id="last-name">Last Name :
-            <input type="text" id="last-input" placeholder="Enter your Last Name ">
+            <input type="text" required id="last-input" placeholder="Enter your Last Name "  >
         </div>
         <div id="address">
             <label for="input-address">Address :</label>
-            <textarea  id="address-text" placeholder="Enter your Address"></textarea>
+            <textarea  id="address-text" required placeholder="Enter your Address"></textarea  >
         </div>
         <div id="pincode">
             <label for="pincode">Pincode :</label>
-            <input type="text" id="input-pincode" placeholder="Enter your Pincode">
+            <input type="number" id="input-pincode" placeholder="Enter your Pincode" required >
         </div>
         <div id="gender">
             <label>Gender :</label>
-            <input  id="input-male" type="radio" name="gender" value="Male" required > <label for="input-male">Male</label> 
-            <input id="input-female" type="radio" name="gender" value="Female" required >  <label for="input-female" >Female</label> 
+            <input  id="input-male" type="radio" name="gender" value="Male"   > <label for="input-male">Male</label> 
+            <input id="input-female" type="radio" name="gender" value="Female"   >  <label for="input-female" >Female</label> 
             
         </div>
         <div id="foods"> 
              <div id="food-items">Food Items :</div>
             <ul>
-                <li> <input type="checkbox" name="food" id="input-Parotta" value="Parotta" > <label for="input-Parotta">Parotta</label> </li>
-                <li> <input type="checkbox" name="food" id="input-Biriyani" value="input-Biriyani" > <label for="input-Biriyani">Biriyani</label></li>
-                <li> <input type="checkbox" name="food" id="input-Dosa" value="input-Dosa" > <label for="input-Dosa">Dosa</label></li>
-                <li> <input type="checkbox"  name="food" id="input-Idly" value="input-Idly" ><label for="input-Idly">Idly</label></li>
+                <li> <input type="checkbox" name="food" id="input-Parotta" value="Parotta"> <label for="input-Parotta">Parotta</label> </li>
+                <li> <input type="checkbox" name="food" id="input-Biriyani" value="Biriyani" > <label for="input-Biriyani">Biriyani</label></li>
+                <li> <input type="checkbox" name="food" id="input-Dosa" value="Dosa" > <label for="input-Dosa">Dosa</label></li>
+                <li> <input type="checkbox"  name="food" id="input-Idly" value="Idly" ><label for="input-Idly">Idly</label></li>
                 <li> <input type="checkbox"  name="food" id="input-Pongal" value="Pongal" > <label for="input-Pongal">Pongal</label></li>
 
 
@@ -47,17 +48,17 @@
         </div>
         <div id="state">
             <label for="input-state" >State :</label>
-            <input type="text" id="input-state" placeholder="Enter your State">
+            <input type="text" id="input-state" placeholder="Enter your State"  >
         </div>
         <div id="counthy">
             <label for ="input-country">Country :</label>
-            <input type="text" id="input-country" placeholder="Enter your Counthy" >
+            <input type="text" id="input-country" placeholder="Enter your Counthy" required >
         </div>
         <button type="submit" id="submit" >Submit</button>
         <button type="reset" id="reset" >Reset</button>
     </form>
     <br>
-    <table  width="100%" border="1" cellspacing="0" cellpadding="0" border="0">
+    <table id="table" width="100%" border="1" cellspacing="0" cellpadding="0" border="0">
     
         <thead>
             <th id="table-First">First Name</th>
@@ -75,6 +76,9 @@
     </table>
 
     </div>
+    </div>
     <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+   
 </body>
 </html>
