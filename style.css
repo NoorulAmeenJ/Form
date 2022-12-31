@@ -32,6 +32,11 @@ button{
 #table{
     color: black;
 }
+ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
 
 /* #foods , #container{
     background-color: aqua;

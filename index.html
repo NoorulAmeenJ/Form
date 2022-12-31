@@ -15,25 +15,26 @@
         <p id="description">Fill the form as your wish</p>
     <form id="form" >
         <div >First Name :
-            <input type="text"  required id="first-name" placeholder="Enter your First Name "    >
+            <input type="text"    id="first-name" placeholder="Enter your First Name "    >
         </div>               
         <div id="last-name">Last Name :
-            <input type="text" required id="last-input" placeholder="Enter your Last Name "  >
+            <input type="text"   id="last-input" placeholder="Enter your Last Name "  >
         </div>
         <div id="address">
             <label for="input-address">Address :</label>
-            <textarea  id="address-text" required placeholder="Enter your Address"></textarea  >
+            <textarea  id="address-text"   placeholder="Enter your Address"></textarea  >
         </div>
         <div id="pincode">
             <label for="pincode">Pincode :</label>
-            <input type="number" id="input-pincode" placeholder="Enter your Pincode" required >
+            <input type="number" id="input-pincode" placeholder="Enter your Pincode"   >
         </div>
         <div id="gender">
-            <label>Gender :</label>
-            <input  id="input-male" type="radio" name="gender" value="Male"   > <label for="input-male">Male</label> 
-            <input id="input-female" type="radio" name="gender" value="Female"   >  <label for="input-female" >Female</label> 
+            <label>Gender :</label required>
+            <input  id="input-male" type="radio" name="gender" value="Male" required  > <label for="input-male">Male</label> 
+            <input id="input-female" type="radio" name="gender" value="Female"  required >  <label for="input-female" >Female</label> 
             
         </div>
+        <br>
         <div id="foods"> 
              <div id="food-items">Food Items :</div>
             <ul>
@@ -52,7 +53,7 @@
         </div>
         <div id="counthy">
             <label for ="input-country">Country :</label>
-            <input type="text" id="input-country" placeholder="Enter your Counthy" required >
+            <input type="text" id="input-country" placeholder="Enter your Counthy"   >
         </div>
         <button type="submit" id="submit" >Submit</button>
         <button type="reset" id="reset" >Reset</button>

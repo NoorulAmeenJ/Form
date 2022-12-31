@@ -19,6 +19,7 @@ for(i=0; i<gendername.length; i++)
 {
     if(gendername[i].checked == true){
       var genderin = gendername[i].value;
+    //   console.log(genderin)
     }
 }      
 // ----------------------------------------------------
@@ -30,15 +31,18 @@ for(i=0; i<food.length; i++){
     if(food[i].checked == true){
         count++
          array.push(food[i].value)
-
     }    
 }
 
 console.log(array)
+
+if(finput.value==''|| linput.value==''||addinput.value==''|| pininput.value ==''|| genderin=='' || stateinput.value==''|| countryinput.value==''){
+    alert("Please enter all the fields name");
+    // return true
+}
+
 if(count==2)
 {
-
-
 var tablebody = document.getElementById("table-body")
 var newrow = tablebody.insertRow(-1);
 
