@@ -14,10 +14,12 @@ var submit =document.getElementById("submit")
 submit.addEventListener("click", (e)=>{
     e.preventDefault();
 // for gender radio boxes
+var gendercount= 0 
 var gendername = document.getElementsByName('gender');    
 for(i=0; i<gendername.length; i++) 
 {
     if(gendername[i].checked == true){
+        gendercount++
       var genderin = gendername[i].value;
     //   console.log(genderin)
     }
@@ -36,12 +38,12 @@ for(i=0; i<food.length; i++){
 
 console.log(array)
 
-if(finput.value==''|| linput.value==''||addinput.value==''|| pininput.value ==''|| genderin=='' || stateinput.value==''|| countryinput.value==''){
-    alert("Please enter all the fields name");
-    // return true
-}
+// if(finput.value!==''&& linput.value!==''&&addinput.value!==''&& pininput.value ==!''&& stateinput.value==!''&& countryinput.value!==''){
+//     alert("Please enter all the fields name");
+//     // return true
+// }
 
-if(count==2)
+if(count==2 && gendercount== 1 && finput.value!==''&& linput.value!==''&&addinput.value!==''&& pininput.value !==''&& stateinput.value !==''&& countryinput.value!=='')
 {
 var tablebody = document.getElementById("table-body")
 var newrow = tablebody.insertRow(-1);
@@ -101,7 +103,7 @@ function reset() {
 reset()
 }
 else{
-    alert("Please select only 2 food item")
+    alert(`Please select only 2 food item checkin Gender `)
 }
 })
 
